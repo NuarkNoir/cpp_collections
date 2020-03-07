@@ -2,13 +2,14 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "g++.exe build active file",
+            "label": "g++.exe build debug",
             "command": "D:\\prog_stuff\\MinGW\\bin\\g++.exe",
             "args": [
                 "-g",
-                "${file}",
+                "${workspaceFolder}\\main.cpp",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${workspaceFolder}\\debug\\main.exe",
+                "-O0"
             ],
             "options": {
                 "cwd": "D:\\prog_stuff\\MinGW\\bin"
