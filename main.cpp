@@ -1,9 +1,7 @@
 #include <iostream>
 #include <cassert>
 
-#include "queue.h"
-#include "vector.h"
-#include "stack.h"
+#include "containers.h"
 
 using namespace std;
 
