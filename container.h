@@ -1,5 +1,5 @@
-#ifndef NN_COLLS_CONTAINER
-#define NN_COLLS_CONTAINER
+#ifndef CPP_COLLECTIONS_CONTAINER_H
+#define CPP_COLLECTIONS_CONTAINER_H
 
 #include <type_traits>
 
@@ -54,5 +54,4 @@ public:
     }
 };
 
-
-#endif 
+#endif //CPP_COLLECTIONS_CONTAINER_H

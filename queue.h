@@ -1,5 +1,5 @@
-#ifndef NN_COLLS_QUEUE
-#define NN_COLLS_QUEUE
+#ifndef CPP_COLLECTIONS_QUEUE_H
+#define CPP_COLLECTIONS_QUEUE_H
 
 #include <type_traits>
 
@@ -76,5 +76,4 @@ public:
     }
 };
 
-
-#endif 
+#endif //CPP_COLLECTIONS_QUEUE_H

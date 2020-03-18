@@ -1,5 +1,5 @@
-#ifndef NN_COLLS_VECTOR
-#define NN_COLLS_VECTOR
+#ifndef CPP_COLLECTIONS_VECTOR_H
+#define CPP_COLLECTIONS_VECTOR_H
 
 #include <type_traits>
 
@@ -177,5 +177,4 @@ public:
     }
 };
 
-
-#endif
+#endif //CPP_COLLECTIONS_VECTOR_H
