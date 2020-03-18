@@ -9,4 +9,4 @@ add_executable(cpp_collections
         container.h
         main.cpp
         queue.h
-        vector.h)
+        vector.h stack.h)

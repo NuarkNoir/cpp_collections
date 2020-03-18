@@ -3,15 +3,18 @@
 
 #include "queue.h"
 #include "vector.h"
+#include "stack.h"
 
 using namespace std;
 
 void queue_test();
 void vector_test();
+void stack_test();
 
 int main() {
     //queue_test();
-    vector_test();
+    //vector_test();
+    stack_test();
 
     cin.get();
     return 0;
@@ -51,12 +54,7 @@ void queue_test() {
 
     printf("\tTest cases: ok\n");
 }
-void p(vector<int>&v) {
-    for (int i = 0; i < v.size(); i++) {
-        cout << v[i] << " ";
-    }
-    cout << endl;
-}
+
 void vector_test() {
     printf("Test cases for vector\n");
     vector<int> d(10, 7);
@@ -125,4 +123,40 @@ void vector_test() {
     assert(string("cat") == string(s.data()));
 
     printf("\tTest cases: ok\n");
+}
+
+void stack_test() {
+    printf("Test cases for stack\n");
+    stack<int> d;
+
+    for (int i = 1; i <= 100; i++) {
+        d.push(i * 13);
+    }
+
+    printf("\tChecking for correct insertion and popping...\n");
+    assert(d.pop() == 1300 && d.pop() == 1287 && d.pop() == 1274);
+
+    printf("\tChecking for correct size calculation...\n");
+    assert(d.size() == 97);
+
+    stack<char> s;
+    for (char c : "test string") {
+        s.push(c);
+    }
+    s.push('\0'); // it is already contains \0, I know
+
+    printf("\tNot only integers...\n");
+    assert(s.size() == 13);
+
+
+    printf("\tClear functioning...\n");
+    s.clear();
+    assert(s.size() == 0);
+
+    for (char c : "\nko :sesac tseT\t") {
+        s.push(c);
+    }
+    while (s.size() > 0) {
+        cout << s.pop();
+    }
 }
